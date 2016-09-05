@@ -22,7 +22,7 @@ RSpec.describe AddressBook do
     describe "#add_entry" do
         it "adds only one entry to the address book" do 
             book = AddressBook.new
-            book.add_entry('Ada Lovelace', '01000.012.1815', 'augusta.king@lovelace.com')
+            book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
             
             expect(book.entries.size).to eq(1)
         end
