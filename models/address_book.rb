@@ -59,8 +59,10 @@ class AddressBook
         
         # #5
         return nil
-        
+    end
     
+    def defcon5
+        @entries = []
     end
     
 end

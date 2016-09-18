@@ -16,6 +16,7 @@ class MenuController
         puts "3 - Search for an entry"
         puts "4 - Import entries from a CSV"
         puts "5 - Exit" 
+        puts "6 - Defcon5"
         print "Enter your selection: "
         
         # #3 
@@ -41,6 +42,11 @@ class MenuController
             main_menu
         when 5
             puts "Good-bye!"
+        when 6
+            system "clear"
+            @address_book.defcon5
+            puts "YOU DID IT. IT'S ALL GONE"
+            main_menu
             # #8
             exit(0)
         # #9
@@ -207,5 +213,21 @@ class MenuController
         end
     end
     
-end
+#    def defcon5
+#        answer = gets.chomp
+#        if answer.downcase == "n" 
+#            puts "I knew you were a woose."
+#            main_menu
+#        elsif answer.downcase == "y"
+#            puts "IT'S HAPPENING"
+#            address_book.entries.each do |entry|
+#                delete_entry(entry)
+#            end
+#        else
+#            puts "This is seriuos command. Comne back when you know how to type."
+###            system "clear"
+#            main_menu
+#        end
+#    end
     
+end
